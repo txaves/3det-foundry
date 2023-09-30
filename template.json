@@ -1,0 +1,76 @@
+{
+    "Actor": {
+        "types": [
+            "pc",
+            "npc",
+            "enemy"
+        ],
+        "templates": {
+            "concept": "",
+            "stats": {
+                "power": 1,
+                "ability": 1,
+                "resistance": 1
+            },
+            "resources": {
+                "action": {
+                    "value": 1,
+                    "max": 5
+                },
+                "mana": {
+                    "value": 1,
+                    "max": 25
+                },
+                "health": {
+                    "value": 1,
+                    "max": 25
+                }
+            }
+        },
+        "pc": {
+            "templates": [
+                "concept",
+                "stats",
+                "resources"
+            ]
+        },
+        "npc": {
+            "templates": [
+                "concept",
+                "stats",
+                "resources"
+            ]
+        },
+        "enemy": {
+            "templates": [
+                "concept",
+                "stats",
+                "resources"
+            ]
+        }
+    },
+    "Item": {
+        "types": [
+            "weapon",
+            "spell"
+        ],
+        "templates": {
+            "rarity": {
+                "rarity": "Common",
+                "price": 20
+            }
+        },
+        "weapon": {
+            "templates": [
+                "rarity"
+            ],
+            "damage": 5
+        },
+        "spell": {
+            "templates": [
+                "rarity"
+            ],
+            "cost": 2
+        }
+    }
+}
